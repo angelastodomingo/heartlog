@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background: url('your-background.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  margin: 0 auto; 
+  margin-top: 200px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  background-color: #A23E73;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #8e2f61;
+}
+
+.secondary-btn {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.secondary-btn:hover {
+  background-color: #f0f0f0;
+}
