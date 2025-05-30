@@ -109,6 +109,7 @@ const Art = () => {
               </a>
               <h3 id="api-title">{artData ? `"${artData.title}"` : ''}</h3>
               <p id="subhead">{artData ? `By: ${artData.artist_title}` : ''}</p>
+              <p id="credit">The API used belongs to the Art Institute of Chicago.</p>
             </div>
 
             <div className="side">
