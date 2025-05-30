@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+
+/* Fonts applied globally to body or root element if desired */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #6a0dad; /* Purple background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Indie Flower', cursive;
+  color: white;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-left .nav-link {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;  /* ensure consistent font */
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #d3b3ff; /* lighter purple underline */
+  transition: width 0.3s ease;
+}
+
+
+
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.nav-link.active {
+  text-decoration: underline;
+
+}
+
+
+.nav-center .nav-logo {
+  height: 40px;
+}
+
+/*journal styles*/
+.journal-app {
+  padding: 20px;
+  min-height: 100vh;
+  font-family: "Neucha", cursive;
+}
+
+/* Title */
+.journal-title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Neucha', cursive;
+  color: #333;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/*forms*/
+.journal-form{
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: inherit;
+}
+
+.journal-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: #333;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/*entries*/
+.entries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: inherit;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.mood {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.datetime {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.card p {
+  white-space: pre-wrap;
+  color: #444;
+}

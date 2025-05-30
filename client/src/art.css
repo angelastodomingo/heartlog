@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Neucha&display=swap');
+
+
+html, body {
+  height: 100%;
+}
+
+
+.container-fluid {
+  margin-top: 80px; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Neucha', cursive;
+  color: white;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-left .nav-link {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none; 
+  font-family: 'Neucha', cursive;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.nav-link.active {
+  text-decoration: none;
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #d3b3ff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-center .nav-logo {
+  height: 40px;
+}
+
+
+#api-img {
+  max-height: 60vh; 
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  margin-left: 30em;
+}
+
+
+#api-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+    margin-left: 20em;
+}
+
+#subhead {
+  font-size: 18px;
+  color: #666;
+    margin-left: 27em;
+}

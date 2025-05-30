@@ -1,7 +1,7 @@
 // src/Home.jsx
 import React from 'react';
-import './styles.css'; // Link to your CSS
-import logo from './assets/heartlog-logo2.png'; // Assuming you move the logo to src/assets
+import './styles.css'; 
+import logo from './assets/heartlog-logo2.png'; 
 import { Link } from 'react-router-dom'
 
 
@@ -9,9 +9,10 @@ const Home = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="nav-left">
-          <span className="heart-red">heart</span>log
-        </div>
+      <div className="nav-left">
+        <span><span className="heart-red">heart</span>log</span>
+      </div>
+
 
         <div className="nav-center">
           <img src={logo} alt="Logo" className="nav-logo" />
@@ -28,7 +29,9 @@ const Home = () => {
         <div className="hero-overlay">
           <h1>Your own personal journal</h1>
           <p>write freely. feel deeply. it’s all yours.</p>
-          <button className="hero-button">Log your first thought</button>
+          <Link to="/register" className="hero-button">
+          Log your first thought
+          </Link>
         </div>
       </section>
     </div>

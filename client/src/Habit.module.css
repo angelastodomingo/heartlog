@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Neucha&display=swap');
+
+body {
+  font-family: 'Neucha', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #D8D8D8;
+  text-align: center;
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  font-family: 'Neucha', cursive;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navLeft, .navRight {
+  display: flex;
+  gap: 50px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'Neucha', cursive;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #d3b3ff;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}
+
+
+.navLogo {
+  height: 40px;
+}
+
+/*titles*/
+.title {
+  margin-top: 100px;
+  line-height: 10px;
+  font-size: 36px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/*calendar */
+.calendarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.calendarDiv {
+  background-color: white;
+  border-radius: 10px 10px 20px 20px;
+  padding: 20px;
+  width: max-content;
+}
+
+.calendarHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A23E73;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.calendarContent {
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.day {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}

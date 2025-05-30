@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles.css'; // Reuses your existing stylesheet
+import './styles.css'; 
 
-import logo from './assets/heartlog-logo2.png'; // Adjust the path if needed
+import logo from './assets/heartlog-logo2.png'; 
 import aboutImage1 from './assets/Group 8.png';
 import aboutImage2 from './assets/aboutpic1.png';
 import aboutImage3 from './assets/doodle2.png';

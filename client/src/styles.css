@@ -36,8 +36,8 @@ body {
 
 .nav-left {
   font-size: 2rem;
-  font-weight: bold;
   margin-left: 30px;
+  white-space: nowrap;
 }
 
 .nav-center {
@@ -58,7 +58,7 @@ body {
   order: 3;
 }
 
-/* Animated underline on hover */
+/*animations*/
 .nav-right a {
   position: relative;
   color: white;
@@ -82,12 +82,12 @@ body {
   width: 100%;
 }
 
-/* underline for active page */
+
 .nav-right a.active::after {
   width: 100%;
 }
 
-/* Hero Section */
+/*hero section*/
 .hero {
   position: relative;
   height: 90vh;

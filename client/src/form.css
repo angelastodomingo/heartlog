@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Neucha&display=swap');
 
 html, body, #root {
   height: 100%;
   margin: 0;
 }
 
+* {
+  font-family: "Neucha", cursive;
+}
+
 body {
   margin: 0;
-  font-family: "Neucha", cursive;
+  font-family: "Neucha", "Comic Sans MS", cursive;
   font-weight: 400;
   font-style: normal;
   background: url('your-background.jpg') no-repeat center center/cover;
@@ -18,7 +22,7 @@ body {
 
 }
 
-
+/*forms*/
 
 .form-container {
   background-color: white;
@@ -51,6 +55,8 @@ input {
   border-radius: 5px;
 }
 
+
+/*buttons*/
 .primary-btn {
   background-color: #A23E73;
   color: white;
