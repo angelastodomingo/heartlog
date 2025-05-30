@@ -100,7 +100,7 @@ body {
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.2); /* darken background */
+  background-color: rgba(0, 0, 0, 0.2); 
   padding: 40px;
   border-radius: 12px;
   color: white;
@@ -139,7 +139,7 @@ body {
   align-items: center;
   padding: 50px 10%;
   gap: 3rem;
-  background-color: #d3d3d3; /* Light grey to match your design */
+  background-color: #d3d3d3; 
   flex-wrap: wrap;
 }
 
