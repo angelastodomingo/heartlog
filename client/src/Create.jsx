@@ -120,7 +120,7 @@ function Create() {
             <option value="😠 Angry">😠 Angry</option>
             <option value="😴 Tired">😴 Tired</option>
             <option value="😐 Neutral">😐 Neutral</option>
-            <option value="😵‍💫 Neutral">😵‍💫 Complicated</option>
+            <option value="😵‍💫 Complicated">😵‍💫 Complicated</option>
           </select>
 
           <label htmlFor="entry">Your Entry</label>

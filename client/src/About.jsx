@@ -11,9 +11,9 @@ const About = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="nav-left">
-          <span className="heart-red">heart</span>log
-        </div>
+      <div className="nav-left">
+        <span><span className="heart-red">heart</span>log</span>
+      </div>
 
         <div className="nav-center">
           <img src={logo} alt="Logo" className="nav-logo" />
@@ -63,7 +63,7 @@ const About = () => {
       <section className="about-section second">
         <div className="about-text">
           <p>
-            but anyway, why would i choose to make this sorta site, you may ask (or not lol)? it's because i myself digitally journal daily, but there's always this fear in the back of my head that someone is reading all of my entries... so you know what? i could just create my own site where i, and only i, get to view my entries and no third party ever will (looking at you, google). i want that for you as well, since privacy is such a rarity—especially nowadays with A.I. more present and prevalent—so here's a space that's just yours.
+            but anyway, why would i choose to make this sorta site, you may ask (or not lol)? it's because i myself digitally journal daily, but there's always this fear in the back of my head that someone is reading all of my entries... so you know what? i could just create my own site where i, and only i, get to view my entries and no third party ever will (looking at you, google). i want that for you as well, since privacy is such a rarity, especially nowadays with A.I. more present and prevalent more than ever, so here's a space that's just yours.
           </p>
           <p>
             though yes, it’s true the site requires an account to use it, i want you to know i don’t actually have the power (or care, tbh) to view your data. what you write stays with you. i don’t collect anything, and i never will.
